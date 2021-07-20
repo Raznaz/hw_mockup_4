@@ -1,0 +1,50 @@
+/* Task 1 */
+
+.task1 {
+  min-height: 600px;
+  background-color: $dark-green;
+  position: relative;
+  &__title {
+    padding: 20px 0;
+  }
+
+  &__quote {
+    @include font(25px, 700, $white);
+    text-align: center;
+  }
+  &__cite {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__img {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transition: top 0.5s linear;
+
+    &:hover {
+      cursor: pointer;
+      top: 35%;
+    }
+  }
+  &__card1 {
+    transform: rotate(10deg) translate(20px, 0);
+    z-index: 3;
+  }
+
+  &__card2 {
+    transform: rotate(-15deg) translate(-30px, -25px);
+    z-index: 2;
+  }
+
+  &__card3 {
+    transform: rotate(-30deg) translate(-65px, -60px);
+    z-index: 1;
+  }
+}

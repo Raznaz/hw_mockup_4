@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base_font;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  box-shadow: $box-shadow;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  color: $blue;
+}

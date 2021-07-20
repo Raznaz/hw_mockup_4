@@ -1,0 +1,29 @@
+/* Animations */
+
+@keyframes box-moving {
+  0% {
+    left: 50px;
+    top: 0;
+    background-color: $grey;
+  }
+  30% {
+    left: 50px;
+    top: 200px;
+    background-color: $blue;
+  }
+  60% {
+    left: 250px;
+    top: 200px;
+    background-color: $red-light;
+  }
+  80% {
+    left: 250px;
+    top: 0px;
+    background-color: $dark-green;
+  }
+  100% {
+    left: 50px;
+    top: 0px;
+    background-color: $orange;
+  }
+}

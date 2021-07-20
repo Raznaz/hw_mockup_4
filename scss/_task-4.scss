@@ -1,0 +1,19 @@
+/* Task 4 */
+
+.task4 {
+  min-height: 500px;
+  &__title {
+    padding: 20px 0;
+  }
+  &__box {
+    @extend %box-sizing;
+    background-color: $grey;
+    position: relative;
+    left: 50px;
+    top: 0;
+    animation-name: box-moving;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+}

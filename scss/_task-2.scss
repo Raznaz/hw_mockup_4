@@ -1,0 +1,36 @@
+/* Task 2 */
+
+.task2 {
+  min-height: 500px;
+  background-color: $white;
+  &__title {
+    padding: 20px 0;
+  }
+
+  &__box {
+    @extend %box-sizing;
+    position: relative;
+    z-index: 10;
+    background-color: $red-light;
+    top: 100px;
+    left: 100px;
+    &::before {
+      content: '';
+      @extend %box-sizing;
+      position: absolute;
+      background-color: $blue-light;
+      right: -50px;
+      bottom: -50px;
+      z-index: 2;
+    }
+    &::after {
+      content: '';
+      @extend %box-sizing;
+      position: absolute;
+      background-color: $green-light;
+      right: -100px;
+      bottom: -100px;
+      z-index: 1;
+    }
+  }
+}

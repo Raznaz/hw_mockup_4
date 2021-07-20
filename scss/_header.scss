@@ -1,0 +1,9 @@
+/* Header */
+.header {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 20px $black;
+  &__title {
+    padding: 20px 0;
+  }
+}
